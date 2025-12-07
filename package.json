@@ -22,4 +22,11 @@
 }
 "build": "cd client && vite build",
 "preview": "cd client && vite preview"
+"scripts": {
+  "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+  "dev:server": "cd server && node --watch index.js",
+  "dev:client": "cd client && vite",
+  "build": "cd client && vite build",
+  "preview": "cd client && vite preview"
+}
 
