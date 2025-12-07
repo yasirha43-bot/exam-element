@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-300;
+}
+
+body {
+  @apply bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 text-gray-900 font-sans;
+}
+
+html.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.btn {
+  @apply px-4 py-2 rounded font-semibold transition cursor-pointer;
+}
+
+.btn-primary {
+  @apply btn bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300;
+}
+
+html.dark .btn-secondary {
+  @apply bg-gray-700 text-gray-200 hover:bg-gray-600;
+}
+
+.btn-danger {
+  @apply btn bg-red-600 text-white hover:bg-red-700;
+}
+
+.card {
+  @apply bg-white rounded-lg p-6 shadow-md;
+}
+
+html.dark .card {
+  @apply bg-gray-800 shadow-lg;
+}
+
+.input {
+  @apply w-full px-4 py-2 bg-white border border-gray-300 rounded text-gray-900 focus:outline-none focus:border-purple-600 focus:ring-2 focus:ring-purple-200;
+}
+
+html.dark .input {
+  @apply bg-gray-700 border-gray-600 text-white focus:border-purple-500 focus:ring-purple-900;
+}
+
+.modal {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-lg p-8 max-w-lg w-full mx-4 shadow-xl;
+}
+
+html.dark .modal-content {
+  @apply bg-gray-800;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+h2 {
+  @apply text-2xl font-bold mb-3;
+}
+
+h3 {
+  @apply text-xl font-semibold mb-2;
+}
