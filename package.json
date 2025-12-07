@@ -16,7 +16,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2"
-  },
-  "dependencies": {}
+    "concurrently": "^8.2.2",
+    "vite": "^7.2.6"
+  }
 }
+"build": "cd client && vite build",
+"preview": "cd client && vite preview"
+
