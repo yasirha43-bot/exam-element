@@ -7,9 +7,8 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "cd server && node --watch index.js",
-    "dev:client": "cd client && npx vite",
-    "build": "cd client && npx vite build",
-    "preview": "cd client && npx vite preview",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
     "start": "node server/index.js",
     "seed": "cd server && node seed.js"
   },
@@ -21,3 +20,9 @@
     "vite": "^7.2.6"
   }
 }
+npm install vite --save-dev
+git add package.json package-lock.json
+git commit -m "Add Vite build script for client"
+git push origin main
+
+
